@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&lt 1 Q           &kp W         &kp E         &kp R                          &kp T                                                   &kp Y        &kp U  &lt 4 I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                          &kp G                  &kp QUESTION      &kp MINUS      &kp H        &kp J  &lt 5 K      &kp L    &msc SCRL_UP
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                  &kp LEFT          &kp RIGHT      &kp N        &kp M  &lt 5 COMMA  &kp DOT  &msc SCRL_DOWN
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_MUHENKAN  &lt 4 INTERNATIONAL_4  &lt 2 SPACE       &kp BACKSPACE  &lt 2 ENTER                               &kp LS(LG(S))
+&lt 1 Q           &kp W         &kp E         &kp R                          &kp T                                                   &kp Y        &kp U  &lt 4 I   &kp O     &kp P
+&kp A             &kp S         &kp D         &kp F                          &kp G                  &kp QUESTION      &kp MINUS      &kp H        &kp J  &lt 5 K   &kp L     &mo 1
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                  &kp COMMA         &kp PERIOD     &kp N        &kp M  &mkp MB1  &mkp MB2  &mo 5
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_MUHENKAN  &lt 5 INTERNATIONAL_4  &lt 2 SPACE       &kp BACKSPACE  &lt 2 ENTER                             &kp LS(LG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp F1    &kp F2          &kp F3     &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
+&trans    &trans          &trans     &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp F11  &kp F12
+&trans    &kp UP_ARROW    &trans     &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans
+&kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
         };
 
@@ -122,7 +122,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans    &trans    &mkp MB3  &trans    &to 0
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &trans    &mkp MB3  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
             >;
         };
